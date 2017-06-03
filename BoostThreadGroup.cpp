@@ -1,12 +1,12 @@
-// BoostThreadGroup.cpp : Defines the entry point for the console application.
-// Source : https://stackoverflow.com/questions/27672591/boost-asio-send-and-receive-messages
+	// BoostThreadGroup.cpp : Defines the entry point for the console application.
+	// Source : https://stackoverflow.com/questions/27672591/boost-asio-send-and-receive-messages
 
 #include <iostream>
 #include <string>
 #include <boost/asio.hpp>
 #include<boost/thread.hpp>
 
-using namespace boost::asio;
+	using namespace boost::asio;
 
 static const int PORT = 52275;
 
@@ -53,7 +53,7 @@ void server_thread()
 			boost::system::error_code ec;
 			while (boost::asio::read(socket, sb, ec))
 			{
-				std::cout << "received: '" << &sb << "'\n";
+				std::cout << "received:\n" << &sb;
 
 				if (ec)
 				{
@@ -81,4 +81,3 @@ int main()
 
 	return 0;
 }
-
