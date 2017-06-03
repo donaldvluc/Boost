@@ -1,5 +1,5 @@
-	// BoostThreadGroup.cpp : Defines the entry point for the console application.
-	// Source : https://stackoverflow.com/questions/27672591/boost-asio-send-and-receive-messages
+// BoostThreadGroup.cpp : Defines the entry point for the console application.
+// Source : https://stackoverflow.com/questions/27672591/boost-asio-send-and-receive-messages
 
 #include <iostream>
 #include <string>
